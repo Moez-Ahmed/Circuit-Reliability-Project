@@ -15,20 +15,20 @@ into a combinational circuit that can further be operated on using the above com
 The current list of logic devices that work are:  
 
 Primitives:  
-+AND, NAND  
-+OR, NOR  
-+XOR, XNOR  
-+NOR, BUF  
+*AND, NAND  
+*OR, NOR  
+*XOR, XNOR  
+*NOR, BUF  
 Routing:  
-+MUX, DEMUX  
-+TBUF  
+*MUX, DEMUX  
+*TBUF  
 Data:  
-+Encoder, Decoder  
+*Encoder, Decoder  
 Arithmetic:  
-+Half Adder, Full Adder  
-+Ripple Carry Adder  
-+Comparator  
-+ALU  
+*Half Adder, Full Adder  
+*Ripple Carry Adder  
+*Comparator  
+*ALU  
 Lookup:  
-+ROM  
+*ROM  
 
