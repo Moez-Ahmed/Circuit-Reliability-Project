@@ -49,7 +49,7 @@ This describes a circuit where:
 | `NOR`  | Logical NOR |
 | `XOR`  | Logical XOR |
 | `XNOR` | Logical XNOR |
-| `NOT`  | Logical NOT — single input ⚠️ *confirm: listed as NOR twice in spec* |
+| `NOT`  | Logical NOT — single input  |
 | `BUF`  | Buffer — passes input through unchanged |
 
 ### Routing
@@ -69,7 +69,7 @@ This describes a circuit where:
 
 ## How It Works
 
-Internally, each gate is converted into a set of CNF clauses using the **Tseitin transformation**. This produces an equisatisfiable CNF formula that can be passed to a SAT solver.
+Internally, each gate is converted into a set of CNF clauses using the Tseitin transformation. This produces an equisatisfiable CNF formula that can be passed to a SAT solver.
 
 ```
 Netlist → Parse → CNF Encoding → SAT Solver → Result
@@ -85,6 +85,6 @@ Netlist → Parse → CNF Encoding → SAT Solver → Result
 
 ## Notes
 
-- Only **combinational logic** is supported — no flip-flops, latches, or clocked elements
+- Only **combinational logic** is supported — no flip-flops, latches, or clocked elements __But if someone were to ask I would be happy to try sequential logic__
 - Primary inputs and outputs are inferred automatically from the netlist — signals never driven by a gate are treated as inputs
 - Signal names are case-sensitive
