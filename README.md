@@ -19,11 +19,13 @@ Primitives:
 *OR, NOR  
 *XOR, XNOR  
 *NOR, BUF  
+
 Routing:  
 *MUX, DEMUX  
 *TBUF  
 Data:  
 *Encoder, Decoder  
+
 Arithmetic:  
 *Half Adder, Full Adder  
 *Ripple Carry Adder  
