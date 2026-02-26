@@ -5,7 +5,6 @@ A SAT-based EDA tool for formal circuit verification and analysis. Features incl
 The intention is to convert a circuit netlist of the following form:
 
 Gate Input1 Input2  Output  
-
 Gate2 Input3 InputN Output2  
 
 
