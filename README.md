@@ -4,13 +4,17 @@ A SAT-based EDA tool for formal circuit verification and analysis. Features incl
 
 The intention is to convert a circuit netlist of the following form:
 
-Gate Input1 Input2  Output
-Gate2 Input3 InputN Output2
+Gate Input1 Input2  Output  
+
+Gate2 Input3 InputN Output2  
 
 
-into a combinational circuit that can further be operated on using the above commands.
 
-The current list of logic devices that work are:
+into a combinational circuit that can further be operated on using the above commands.  
+
+
+The current list of logic devices that work are:  
+
 Primitives:
 +AND, NAND
 +OR, NOR
