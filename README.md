@@ -7,7 +7,7 @@ A SAT-based Electronic Design Automation (EDA) tool for formal verification and 
 ## Features
 
 - **Circuit Equivalence Checking** — Formally verify whether two circuits are logically equivalent
-- **Automatic Test Pattern Generation (ATPG)** — Derive input patterns that expose faults in a circuit
+- **Automatic Test Pattern Generation (ATPG)** — Derive input patterns that expose faults in a circuit then builds system verilog test bench
 - **Logic Optimization** — Simplify circuits while preserving logical equivalence
 - **Verilog Code Generation** — Export a parsed netlist as synthesizable Verilog
 
