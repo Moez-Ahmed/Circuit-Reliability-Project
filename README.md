@@ -48,7 +48,7 @@ Netlist → Parse → CNF Encoding → SAT Solver → Result
 - **ATPG** encodes a fault model and asks the SAT solver for a satisfying input assignment
 - **Optimization** iteratively checks if a reduced circuit is equivalent to the original
 
----
+
 
 ## Notes
 
