@@ -25,10 +25,4 @@
 | `ENCODER` | Encodes N input lines into log₂(N) output lines |
 | `DECODER` | Decodes log₂(N) input lines into N output lines |
 
----
 
-## How It Works
-
-Internally, each gate is converted into a set of CNF clauses using the Tseitin transformation. This produces an equisatisfiable CNF formula that can be passed to a SAT solver.
-
-```
