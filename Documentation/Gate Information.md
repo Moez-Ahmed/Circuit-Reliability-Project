@@ -34,6 +34,10 @@
 | `SRFF` | SR Flip-Flop — S sets, R resets output, S=R=1 is a forbidden state and will be flagged |
 | `DFFE` | D Flip-Flop with Clock Enable — only captures input when enable is high, internally decomposed to DFF + AND |
 
+
+_Future Features_
+
+
 ### Registers
 | Element   | Description |
 |-----------|-------------|
