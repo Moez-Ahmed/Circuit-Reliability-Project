@@ -40,8 +40,7 @@ This describes a circuit where:
 
 
 Netlist → Parse → CNF Encoding → SAT Solver → Result
-                ↘
-                 Verilog Output
+
 
 
 - **Equivalence checking** encodes both circuits and asserts they differ (miter circuit) — UNSAT means equivalent
