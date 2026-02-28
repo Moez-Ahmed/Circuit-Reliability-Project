@@ -11,22 +11,19 @@
 
 //Function to prompt a choice from the user
 int choiceFunction();
-
+//Helper function just to see if the contents of the file were saved
+void displayFunction(std::vector<std::string> vectorInput);
 
 int main()
 {
     //initialize the constructor
-    Netlist netlist();
+    Netlist netlist;
     int choice = choiceFunction();
     //Make sure input file is in the same directory as the function
-    netlist::netlistRead();
+    netlist.netlistRead();
+    //Method to see if the data is stored
+    //displayFunction(netlist.netlistData);
 
-
-    
-    switch (choice) {
-    case 1:
-        
-    }
     return 0;
 
 }
@@ -39,7 +36,7 @@ int choiceFunction() {
     while (choice == 0) {
         std::cout << GREEN << "Welcome to the Circuit Reliability software tool page!" << RESET << std::endl;
 
-        std::cout << "Please select a tool from the options below (Type the corresponding #:" << std::endl;
+        std::cout << "Please select a tool from the options below (Type the corresponding #):" << std::endl;
         std::cout << std::endl;
         std::cout << "1.) Circuit Statistics -" << std::endl << "Finds gate count, input/output count, longest path(critical path length) and analyzes fan - in/fan - out" << std::endl;
         std::cout << std::endl;
@@ -55,8 +52,24 @@ int choiceFunction() {
         std::cout << std::endl;
         std::cout << "7.) SystemVerilog Test Pattern (Experimental) - " << std::endl << "Uses Verilog code to develop a test bench" << std::endl;
         std::cout << std::endl;
+        std::cout << "Your choice: ";
         std::cin >> choice;
+        std::cin.ignore();
         std::cout << std::endl;
     }
     return choice;
+}
+
+void displayFunction(std::vector<std::string> vectorInput) {
+    int inputSize = vectorInput.size();
+    std::cout << std::endl;
+    std::cout << std::endl;
+    std::cout << "Beginning to output file data:" << std::endl;
+    
+    for (int i = 0; i < inputSize; i++) {
+        std::cout << vectorInput[i] << std::endl;
+    }
+    std::cout << std::endl;
+    std::cout << std::endl;
+
 }
