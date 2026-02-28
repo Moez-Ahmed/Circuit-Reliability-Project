@@ -51,7 +51,6 @@ Netlist → Parse → CNF Encoding → SAT Solver → Result
 
 ## Notes
 
-- Only **combinational logic** is supported — no flip-flops, latches, or clocked elements _But if someone were to ask I would be happy to try sequential logic_
 - Primary inputs and outputs are inferred automatically from the netlist — signals never driven by a gate are treated as inputs
 - Signal names are case-sensitive
 
