@@ -1,6 +1,6 @@
 I will keep track of how the code works in this document.  
 
-To begin, we need to read the data off of the netlist file, this in turn demands a method of checking to see if the file contains what we need. For now, all we will look for are if the file is formatted correctly - meaning, is there a START and STOP signal.  
+To begin, we need to read the data off of the netlist file, this in turn demands a method of checking to see if the file contains what we need. For now, all we will look for is if the file is formatted correctly - meaning, is there a START and STOP signal.  
 
 This was accomplished by the header file netlistIo, which essentially checked for the above and then stored every line as it's own string within a vector.  
 
